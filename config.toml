@@ -20,7 +20,7 @@ theme = "DoIt"
   social = true
 
 [params.social]
-  GitHub = "https://github.com/dcjanus"
+  GitHub = "dcjanus"
 
 [params.page.outdatedArticleReminder]
   enable = false
