@@ -7,35 +7,45 @@ theme = "DoIt"
 
 [params]
   version = "0.2.X"
+  gitRepo = "https://github.com/dcjanus/dcjanus.github.io"
+
+[params.rss]
+  rss = 10
 
 [params.home.profile]
+  enable = true
   gravatarEmail = "dcjanus@dcjanus.com"
+  title = "DCjanus 的博客"
+  typeit = false
+  social = true
+
+[params.social]
+  GitHub = "https://github.com/dcjanus"
+
+[params.page.outdatedArticleReminder]
+  enable = false
 
 [menu]
   [[menu.main]]
     identifier = "posts"
-    pre = ""
-    post = ""
     name = "文章"
     url = "/posts/"
-    title = ""
     weight = 1
   [[menu.main]]
     identifier = "tags"
-    pre = ""
-    post = ""
     name = "标签"
     url = "/tags/"
-    title = ""
     weight = 2
   [[menu.main]]
     identifier = "categories"
-    pre = ""
-    post = ""
     name = "分类"
     url = "/categories/"
-    title = ""
     weight = 3
+  [[menu.main]]
+    identifier = "rss"
+    name = "订阅"
+    url = "/index.xml"
+    weight = 4
 
 [markup]
   [markup.highlight]

@@ -1,4 +1,2 @@
 serve:
-	hugo serve --disableFastRender
-publish:
-	hugo
+	hugo serve --disableFastRender --buildDrafts
