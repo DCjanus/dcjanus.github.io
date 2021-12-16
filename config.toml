@@ -4,6 +4,7 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 title = "DCjanus 的博客"
 theme = "DoIt"
+enableGitInfo = true
 
 [params]
   version = "0.2.X"
@@ -18,6 +19,9 @@ theme = "DoIt"
   title = "DCjanus 的博客"
   typeit = false
   social = true
+
+[params.footer]
+  author = true
 
 [params.social]
   GitHub = "dcjanus"
