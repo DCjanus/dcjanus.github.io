@@ -3,3 +3,5 @@ themes/DoIt/README.md:
 
 serve: themes/DoIt/README.md
 	hugo serve --disableFastRender --buildDrafts
+
+.PHONY: serve
