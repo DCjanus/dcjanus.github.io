@@ -4,39 +4,71 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 title = "DCjanus 的博客"
 theme = "DoIt"
+enableGitInfo = true
+
+[author]
+name = "DCjanus"
+email = "dcjanus@dcjanus.com"
+link = "https://github.com/dcjanus"
+gravatarEmail = "dcjanus@dcjanus.com"
 
 [params]
   version = "0.2.X"
+  gitRepo = "https://github.com/dcjanus/dcjanus.github.io"
+
+[params.rss]
+  rss = 10
 
 [params.home.profile]
+  enable = true
   gravatarEmail = "dcjanus@dcjanus.com"
+  title = "DCjanus 的博客"
+  typeit = false
+  social = true
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    pre = ""
-    post = ""
-    name = "文章"
-    url = "/posts/"
-    title = ""
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "标签"
-    url = "/tags/"
-    title = ""
-    weight = 2
-  [[menu.main]]
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "分类"
-    url = "/categories/"
-    title = ""
-    weight = 3
+[params.footer]
+  author = true
 
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+series = "series"
+
+[params.social]
+  GitHub = "dcjanus"
+  Email = "DCjanus@dcjanus.com"
+
+[params.page.outdatedArticleReminder]
+  enable = false
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 1
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 2
+[[menu.main]]
+  identifier = "rss"
+  name = "订阅"
+  url = "/index.xml"
+  weight = 4
+[[menu.main]]
+  identifier = "authors"
+  name = "作者"
+  url = "/authors/"
+  weight = 5
+[[menu.main]]
+  identifier = "github"
+  post = ""
+  name = "源码"
+  url = "https://github.com/dcjanus/dcjanus.github.io"
+  title = "GitHub"
+  weight = 9
 [markup]
   [markup.highlight]
     noClasses = false
