@@ -5,6 +5,7 @@ hasCJKLanguage = true
 title = "DCjanus 的博客"
 theme = "DoIt"
 enableGitInfo = true
+enableEmoji = true
 
 [author]
 name = "DCjanus"
