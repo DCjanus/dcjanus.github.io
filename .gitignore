@@ -1,0 +1,5 @@
+public/
+.vscode/
+.idea/
+.hugo_build.lock
+resources/_gen/
