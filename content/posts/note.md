@@ -8,11 +8,6 @@ description: "平时有很多零碎的知识点，写起来没几句，重新摸
 ---
 
 <!--more-->
----
-
-在 Windows 上使用 CLion 直接打开 WSL2 文件系统内的 Rust 项目，建立索引的速度慢到令人发指，并且有各种小问题。一开始以为是 WSL2 跨文件系统访问的性能问题，但即使已经保证代码和工具链都在 WSL 内，也还是没能有所改善。后来发现是需要配置 run target 为 WSL 才可以。
-
----
 
 目前（2022年6月）WSL2 不能直接安装 ArchLinux，可以用 [Distrod](https://github.com/nullpo-head/wsl-distrod) 安装，甚至还能使用 systemd，真香。
 
