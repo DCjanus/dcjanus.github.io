@@ -9,6 +9,10 @@ description: "平时有很多零碎的知识点，写起来没几句，重新摸
 
 <!--more-->
 
+`dmesg -T` 的时间可能有一定偏差，因为它对应的是 CPU 时钟，而不是墙上时间。可以使用 `journalctl -k` 查看，因为它展示的是其读取到内核日志时的系统时间。
+
+---
+
 目前（2022年6月）WSL2 不能直接安装 ArchLinux，可以用 [Distrod](https://github.com/nullpo-head/wsl-distrod) 安装，甚至还能使用 systemd，真香。
 
 ---
