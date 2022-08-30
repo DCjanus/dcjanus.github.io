@@ -9,6 +9,15 @@ description: "平时有很多零碎的知识点，写起来没几句，重新摸
 
 <!--more-->
 
+在 MacOS 上，`GraphicsMagickWand-config --ldflags` 输出的信息补全，使用 Rust 的绑定库 `graphicsmagick-sys` 时会因为无法找到相关动态链接库而报错，可以在 Cargo Config 中添加以下配置临时绕过（前提是依赖库都使用 HomeBrew 安装）。
+
+```toml
+[target.aarch64-apple-darwin]
+rustflags = ["-L", "/opt/homebrew/lib"]
+```
+
+---
+
 `dmesg -T` 的时间可能有一定偏差，因为它对应的是 CPU 时钟，而不是墙上时间。可以使用 `journalctl -k` 查看，因为它展示的是其读取到内核日志时的系统时间。
 
 ---
