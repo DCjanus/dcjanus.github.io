@@ -9,6 +9,10 @@ description: "平时有很多零碎的知识点，写起来没几句，重新摸
 
 <!--more-->
 
+某天发现线上 NGINX 大量出现 `too much open files` 的错误，但系统配置的 `ulimit` 已经很大（4M），最后发现是 NGINX 还有一个 `worker_rlimit_nofile` 的配置项，需要单独设置。
+
+---
+
 在 MacOS 上，`GraphicsMagickWand-config --ldflags` 输出的信息补全，使用 Rust 的绑定库 `graphicsmagick-sys` 时会因为无法找到相关动态链接库而报错，可以在 Cargo Config 中添加以下配置临时绕过（前提是依赖库都使用 HomeBrew 安装）。
 
 ```toml
