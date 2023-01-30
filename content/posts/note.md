@@ -9,6 +9,14 @@ description: "平时有很多零碎的知识点，写起来没几句，重新摸
 
 <!--more-->
 
+Linux 上实时展示日志新增行数可以用 `pv` 命令，如：
+
+```shell
+tail -f /var/log/nginx/access.log | grep 'your_domain' | pv -l -r >/dev/null
+```
+
+---
+
 某天发现线上 NGINX 大量出现 `too much open files` 的错误，但系统配置的 `ulimit` 已经很大（4M），最后发现是 NGINX 还有一个 `worker_rlimit_nofile` 的配置项，需要单独设置。
 
 ---
