@@ -13,7 +13,7 @@ enableEmoji = true
   gravatarEmail = "dcjanus@dcjanus.com"
 
 [params]
-  version = "0.2.X"
+  version = "0.3.X"
   gitRepo = "https://github.com/dcjanus/dcjanus.github.io"
 
 [params.rss]
