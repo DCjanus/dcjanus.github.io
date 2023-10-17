@@ -1,7 +1,6 @@
 ---
 title: "Linux 内核版本号过大导致 TiKV 的一次 Panic"
 date: 2022-12-17T23:19:25+08:00
-draft: false
 authors: ['DCjanus']
 tags: ['Rust']
 ---
