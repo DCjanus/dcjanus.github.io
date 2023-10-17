@@ -1,7 +1,6 @@
 ---
 title: "大规模存储系统成本性能优化的一些方法"
 date: 2021-12-19T09:58:31+08:00
-draft: false
 authors: ['DCjanus']
 tags: ['存储']
 ---

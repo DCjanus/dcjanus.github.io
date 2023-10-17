@@ -1,7 +1,6 @@
 ---
 title: "一些零碎知识"
 date: 2022-01-31T21:29:55+08:00
-draft: false
 authors: ['DCjanus']
 tags: []
 description: "平时有很多零碎的知识点，写起来没几句，重新摸索一遍可能很花时间，在这里简单记录一下，方便自己查阅。"

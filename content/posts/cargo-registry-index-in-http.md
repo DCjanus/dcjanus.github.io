@@ -1,7 +1,6 @@
 ---
 title: "Cargo Registry 稀疏索引的一些介绍"
 date: 2022-01-26T17:36:28Z
-draft: false
 authors: ['DCjanus']
 tags: ['Rust', 'Cargo']
 ---

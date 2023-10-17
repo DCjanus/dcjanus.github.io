@@ -1,7 +1,6 @@
 ---
 title: "一些 CDN 与网站优化的零散知识"
 date: 2022-06-02T09:15:48+08:00
-draft: false
 authors: ['DCjanus']
 tags: ['CDN']
 ---
