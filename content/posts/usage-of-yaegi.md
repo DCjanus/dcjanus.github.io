@@ -97,8 +97,8 @@ func init() {
 
 ```go
 //go:generate go install github.com/traefik/yaegi/cmd/yaegi@v0.15.0
-//go:generate yaegi extract learn_yaegi/a
-//go:generate yaegi extract learn_yaegi/b
+//go:generate yaegi extract learn_yaegi/pkg/a
+//go:generate yaegi extract learn_yaegi/pkg/b
 
 package symbols
 
