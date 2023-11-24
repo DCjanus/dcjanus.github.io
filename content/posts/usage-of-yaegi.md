@@ -106,3 +106,7 @@ import "reflect"
 
 var Symbols = map[string]map[string]reflect.Value{}
 ```
+
+---
+
+PS：写了个简单的 Demo 项目，提供了一个相对完整的示范，用于演示 Yaegi 的实际使用方式，见[DCjanus/yaegi_demo](https://github.com/DCjanus/yaegi_demo)
