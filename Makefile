@@ -7,4 +7,4 @@ preview: themes/DoIt/README.md
 serve: themes/DoIt/README.md
 	hugo serve --disableFastRender
 
-.PHONY: serve
+.PHONY: preview serve
