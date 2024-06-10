@@ -65,7 +65,13 @@ export EDITOR=true # 可选，避免跳出交互式窗口
 git rebase -i --autostash --autosquash $TARGET_COMMIT
 ```
 
-相关解释：<https://ttys3.dev/post/git-fixup-amend-for-any-older-commits-quickly/>
+也可以配置以下 alias 到 `.gitconfig` 方便日常使用：
+```toml
+[alias]
+    fixup = "!f() { TARGET=$(git rev-parse \"$1\"); shift; git commit --fixup=$TARGET ${@} && GIT_EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+```
+
+相关解释：<https://ttys3.dev/post/git-fixup-amend-for-any-older-commits-quickly>
 
 ---
 ImageMagick 部分操作需要产生随机数，默认会在支持 mkstemp 的环境，将 mkstemp 生成的文件名作为随机数熵的一部分，对于服务端常态运行的场景，会产生大量文件系统读写，有一定的性能影响，可以通过条件编译排除这个特性。
