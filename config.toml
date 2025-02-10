@@ -6,15 +6,15 @@ title = "DCjanus 的博客"
 theme = "DoIt"
 enableEmoji = true
 
-[author]
+[params]
+  version = "0.3.X"
+  gitRepo = "https://github.com/dcjanus/dcjanus.github.io"
+
+[params.author]
   name = "DCjanus"
   email = "dcjanus@dcjanus.com"
   link = "https://github.com/dcjanus"
   gravatarEmail = "dcjanus@dcjanus.com"
-
-[params]
-  version = "0.3.X"
-  gitRepo = "https://github.com/dcjanus/dcjanus.github.io"
 
 [params.rss]
   rss = 10
