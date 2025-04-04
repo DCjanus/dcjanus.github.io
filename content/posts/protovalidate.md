@@ -115,3 +115,13 @@ PGV 和 protovalidate 都是强大的 ProtoBuf 验证工具，它们帮助开发
 
 无论选择哪个工具，都可以在 Kratos 框架中方便地集成和使用，提高开发效率和代码质量。
 
+## 注明
+
+本文由 [DCjanus](https://github.com/DCjanus) 编写，并使用 AI 润色。
+
+## 参考资料
+
+- [protoc-gen-validate](https://github.com/envoyproxy/protoc-gen-validate)
+- [protovalidate](https://github.com/bufbuild/protovalidate)
+- [Kratos](https://github.com/go-kratos/kratos)
+
