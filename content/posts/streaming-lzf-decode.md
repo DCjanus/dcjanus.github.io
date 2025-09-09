@@ -1,5 +1,5 @@
 ---
-title: "Streaming Lzf Decode"
+title: "LZF 流式解压"
 date: 2025-07-04T01:34:15+08:00
 draft: false
 authors: ["DCjanus"]
