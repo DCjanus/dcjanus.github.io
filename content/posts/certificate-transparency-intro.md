@@ -151,8 +151,8 @@ CT 把证书签发过程变成了人人可查的公共记录：日志负责记�
 
 # 延伸阅读
 
-- RFC 6962: Certificate Transparency
-- Chrome Certificate Transparency Policy
+- [RFC 6962: Certificate Transparency](https://www.rfc-editor.org/rfc/rfc6962.html)
+- [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html#chromium-certificate-transparency-policy)
 - [Certificate Transparency 官方网站](https://certificate.transparency.dev/)
 
 [^diginotar]: 2011 年 DigiNotar 遭入侵，攻击者伪造了大量热门站点证书，并被浏览器接受。
