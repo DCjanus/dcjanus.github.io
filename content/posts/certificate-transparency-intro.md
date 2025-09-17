@@ -156,5 +156,5 @@ CT 把证书签发过程变成了人人可查的公共记录：日志负责记�
 - [Certificate Transparency 官方网站](https://certificate.transparency.dev/)
 
 [^diginotar]: 2011 年 DigiNotar 遭入侵，攻击者伪造了大量热门站点证书，并被浏览器接受。
-[^cf-ct]: Cloudflare 的 CT Monitoring 服务：<https://www.cloudflare.com/zh-cn/solutions/certificate-transparency-monitoring/>
+[^cf-ct]: Cloudflare 的 CT Monitoring 服务：<https://developers.cloudflare.com/ssl/edge-certificates/additional-options/certificate-transparency-monitoring/>
 [^loglist]: Chrome 团队维护的已知日志列表入口：<https://googlechrome.github.io/CertificateTransparency/log_lists.html>
