@@ -148,7 +148,7 @@ curl -X POST https://owner-api.vn.teslamotors.com/oauth/token \
 
 常驻的几个接口如下：
 
-- `GET /api/1/products`：列出账号下的车辆与能源设备。`/api/1/vehicles` 在近期测试中偶尔返回空列表或缺字段，干脆直接放弃。
+- `GET /api/1/products`：列出账号下的车辆与能源设备。`/api/1/vehicles` 现在已经无法使用了。
 - `GET /api/1/vehicles/{id}/vehicle_data`：获取车辆状态快照，我的定时任务完全依赖这一端点。
 - `POST /api/1/vehicles/{id}/wake_up`：调试时手动唤醒，正式运行时尽量避免，减少能耗。
 
