@@ -50,13 +50,13 @@ tags: ['业务设计']
 
 以阿里云旧版图片处理服务为例，其设计上使用 `@` 分隔图片地址和处理参数，如:
 
-{{< image src="https://image-demo.img-cn-hangzhou.aliyuncs.com/example.jpg@300w_300h.webp" caption="https://image-demo.img-cn-hangzhou.aliyuncs.com/example.jpg@300w_300h.webp" width=300 >}}
+![https://image-demo.img-cn-hangzhou.aliyuncs.com/example.jpg@300w_300h.webp](https://image-demo.img-cn-hangzhou.aliyuncs.com/example.jpg@300w_300h.webp)
 
 其中 `@` 符号前的是[原始图片地址](https://image-demo.img-cn-hangzhou.aliyuncs.com/example.jpg)，其后`300w_300h.webp`为缩略图参数，表示将原图等比例缩放为一个宽不大于300、高不大于300的 webp 图片。
 
 阿里云新版图片处理服务则使用请求参数的形式，如与上面缩略图参数等价的请求：
 
-{{< image src="https://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=image/resize,w_300/format,webp" caption="https://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=image/resize,w_300/format,webp" width=300 >}}
+![https://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=image/resize,w_300/format,webp](https://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=image/resize,w_300/format,webp)
 
 这里的缩略参数是`image/resize,w_300/format,webp`。
 
