@@ -6,7 +6,7 @@ authors: ["DCjanus"]
 tags: ["Redis", "Rust", "Compression"]
 ---
 
-我最近在业余时间重写一个之前为工作开发的 Redis RDB 解析工具，旧版工具在处理大 Key 时内存占用过高，有时会触发容器的内存限制，导致解析失败。因此，新版本的核心目标是实现增量解析。
+我最近在业余时间重写一个之前为工作开发的 Redis RDB 解析工具[^rdbinsight]，旧版工具在处理大 Key 时内存占用过高，有时会触发容器的内存限制，导致解析失败。因此，新版本的核心目标是实现增量解析。
 
 Redis 中对字符串对象，允许使用 LZF 压缩来节省空间，但常见 LZF 实现都只支持一次性解压，仍无法彻底规避内存问题。简单了解 LZF 算法后，发现其实现极为简单，且有流式解压的潜力，因此决定自己实现一个流式解压器。
 
@@ -112,6 +112,8 @@ fn feed(&mut self, i_buf: &mut Buffer, o_buf: &mut Buffer) -> AnyResult {
 这样一来，`LzfChunkDecoder` 的内存占用就只由其内部环形缓冲区的大小（8KB）决定，与原始压缩数据的体积无关，从而满足了增量解析对内存控制的要求。
 
 ## 引用
+
+[^rdbinsight]: RDB 解析工具项目地址：<https://github.com/dcjanus/rdbinsight>
 
 [^liblzf]: liblzf homepage: <http://oldhome.schmorp.de/marc/liblzf.html>
 
