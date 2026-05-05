@@ -1,6 +1,6 @@
 baseURL = "https://blog.dcjanus.com"
 defaultContentLanguage = "zh-cn"
-languageCode = "zh-CN"
+locale = "zh-CN"
 hasCJKLanguage = true
 title = "DCjanus 的博客"
 theme = "DoIt"
